@@ -149,6 +149,7 @@ The best performing model was:
 ## XGBoost Classifier
 
 The XGBoost Classifier achieved the highest test accuracy (**82.12%**) among all evaluated models. It was selected as the final model for deployment because of its strong predictive performance and good generalization on unseen data.
+
 ---
 
 # 🛠 Technologies Used
