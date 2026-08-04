@@ -1,8 +1,15 @@
 # 🚢 Titanic Survival Prediction
 
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://titanic-ml-predictor.streamlit.app/)
+[![Python](https://img.shields.io/badge/Python-3.14-blue)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-App-red)](https://streamlit.io/)
+[![Machine Learning](https://img.shields.io/badge/Machine-Learning-orange)]()
+
 An end-to-end Machine Learning project that predicts whether a passenger survived the Titanic disaster using classification algorithms.
 
 This project follows a complete Data Science workflow, starting from data exploration and preprocessing to model training, evaluation, and deployment through a Streamlit web application.
+
+The final model is deployed as an interactive Streamlit application where users can enter passenger details and get real-time survival predictions with probability scores.
 
 ---
 
@@ -248,15 +255,13 @@ These files are used by the Streamlit application for real-time prediction.
 
 ---
 
-# 🌐 Deployment
+# 🌐 Live Application
 
-The application is prepared for deployment using:
+The Titanic Survival Prediction web application is deployed using Streamlit.
 
-- Hugging Face Spaces
-- Streamlit Cloud
+You can access the live demo here:
 
-The deployed application provides an interactive interface for survival prediction.
-
+🔗 https://titanic-ml-predictor.streamlit.app/
 ---
 
 # 📚 Learning Outcomes
@@ -279,21 +284,22 @@ Through this project, I gained practical experience in:
 
 Possible improvements include:
 
-- Hyperparameter tuning
-- Cross-validation
-- Feature importance analysis
-- Explainable AI using SHAP
-- Docker containerization
-- Cloud deployment
+- Hyperparameter tuning for further accuracy improvement
+- Model explainability using SHAP
+- Feature importance visualization
+- Docker deployment
+- CI/CD pipeline integration
 
 ---
 
-# Author
+#  💻 Author
 
 **Alisha Sajjad**
 
-Machine Learning | Python | Data Science
+AI & Machine Learning Engineer | Python Developer
 
+GitHub: https://github.com/alishasajjad
+LinkedIn: https://linkedin.com/in/devalishasajjad
 ---
 
 ⭐ If you found this project useful, consider giving it a star on GitHub.
