@@ -262,6 +262,7 @@ The Titanic Survival Prediction web application is deployed using Streamlit.
 You can access the live demo here:
 
 🔗 https://titanic-ml-predictor.streamlit.app/
+
 ---
 
 # 📚 Learning Outcomes
