@@ -51,9 +51,9 @@ with col1:
 
     sex_text = st.selectbox("Sex",["Male", "Female"])
     if sex_text == "Male":
-        sex = 1
-    else:
         sex = 0
+    else:
+        sex = 1
 
     age = st.slider("Age",min_value=0,max_value=80,value=25)
 
@@ -120,8 +120,7 @@ input_df = pd.DataFrame({
     "AgeGroup": [Age_Group]
 })
 
-title_mapping = {"Mr":0,"Miss":1,"Mrs":2,"Master":3,"Dr":4,"Rev":5,"Col":6,"Major":7,"Capt":8,"Sir":9,"Lady":10,"Don":11,"Jonkheer":12,"Mme":13,"Mlle":14,"Ms":15,"the Countess":16}
-
+title_mapping = {"Capt": 0,"Col": 1,"Don": 2,"Dr": 3,"Jonkheer": 4,"Lady": 5,"Major": 6,"Master": 7,"Miss": 8,"Mlle": 9,"Mme": 10,"Mr": 11,"Mrs": 12,"Ms": 13,"Rev": 14,"Sir": 15,"the Countess": 16}
 input_df["Title"] = input_df["Title"].map(title_mapping)
 
 # Scale Numerical Features
@@ -132,7 +131,7 @@ input_df[["Age", "Fare"]] = scaler.transform(
 
 # Prediction
 
-if st.button("🚀 Predict Survival", use_container_width=True):
+if st.button("🚀 Predict Survival", width='stretch'):
 
     prediction = model.predict(input_df)[0]
 
@@ -178,7 +177,7 @@ if st.button("🚀 Predict Survival", use_container_width=True):
     "Value": [str(pclass),sex_text,str(age),str(fare),str(family_size),embarked_text]
 })
 
-    st.dataframe(summary, use_container_width=True, hide_index=True)
+    st.dataframe(summary, width='stretch', hide_index=True)
     
 # Sidebar
 
