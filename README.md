@@ -300,7 +300,9 @@ Possible improvements include:
 AI & Machine Learning Engineer | Python Developer
 
 GitHub: https://github.com/alishasajjad
+
 LinkedIn: https://linkedin.com/in/devalishasajjad
+
 ---
 
 ⭐ If you found this project useful, consider giving it a star on GitHub.
