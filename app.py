@@ -131,7 +131,7 @@ input_df[["Age", "Fare"]] = scaler.transform(
 
 # Prediction
 
-if st.button("🚀 Predict Survival", width='stretch'):
+if st.button("🚀 Predict Survival", use_container_width=True):
 
     prediction = model.predict(input_df)[0]
 
@@ -177,7 +177,7 @@ if st.button("🚀 Predict Survival", width='stretch'):
     "Value": [str(pclass),sex_text,str(age),str(fare),str(family_size),embarked_text]
 })
 
-    st.dataframe(summary, width='stretch', hide_index=True)
+    st.dataframe(summary, use_container_width=True, hide_index=True)
     
 # Sidebar
 
